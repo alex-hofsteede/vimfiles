@@ -1,7 +1,8 @@
 
 "set filetype on before filetype off to avoid exit status of 1. see: http://tooky.github.com/2010/04/08/there-was-a-problem-with-the-editor-vi-git-on-mac-os-x.html
 filetype on 
-filetype off 
+filetype plugin indent on
+"filetype off 
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
@@ -14,8 +15,8 @@ colorscheme solarized
 
 "set tabs
 set smartindent
-set tabstop=4
-set shiftwidth=4
+"set tabstop=4
+"set shiftwidth=4
 set expandtab
 set ruler
 set nowrap
