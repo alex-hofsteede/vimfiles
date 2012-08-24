@@ -23,3 +23,26 @@ set nowrap
 
 "map characters
 nmap 0 ^
+"single char deletes not copied to register
+noremap x "_x
+
+"arrow keys do something useful. Note [e and ]e are from unimpaired plugin
+"nmap <Left> <<
+"nmap <Right> >>
+"nmap <Up> [e
+"nmap <Down> ]e
+
+"vmap <Left> <gv
+"vmap <Right> >gv
+"vmap <Up> [egv
+"vmap <Down> ]egv
+
+nmap <Left> <Nop>
+nmap <Right> <Nop>
+nmap <Up> <Nop>
+nmap <Down> <Nop>
+
+vmap <Left> <Nop>
+vmap <Right> <Nop>
+vmap <Up> <Nop>
+vmap <Down> <Nop>
