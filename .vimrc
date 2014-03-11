@@ -20,6 +20,13 @@ set smartindent
 set expandtab
 set ruler
 set nowrap
+set tabstop=4
+set shiftwidth=4
+set autoindent
+set smarttab
+
+"use tags file in home dir
+set tags=~/tags
 
 "map characters
 nmap 0 ^
