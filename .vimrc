@@ -1,3 +1,4 @@
+set bs=indent,eol,start
 
 "set filetype on before filetype off to avoid exit status of 1. see: http://tooky.github.com/2010/04/08/there-was-a-problem-with-the-editor-vi-git-on-mac-os-x.html
 filetype on 
@@ -25,6 +26,9 @@ set nowrap
 nmap 0 ^
 "single char deletes not copied to register
 noremap x "_x
+
+"fit for broken crontab -e
+set backupskip=/tmp/*,/private/tmp/*
 
 "arrow keys do something useful. Note [e and ]e are from unimpaired plugin
 "nmap <Left> <<
