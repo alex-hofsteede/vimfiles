@@ -59,3 +59,8 @@ vmap <Left> <Nop>
 vmap <Right> <Nop>
 vmap <Up> <Nop>
 vmap <Down> <Nop>
+
+let g:syntastic_cpp_compiler='clang'
+let g:syntastic_cpp_compiler_options='-std=c++0x'
+let g:syntastic_python_flake8_args='--ignore=E261,E302,E501,E226'
+let g:syntastic_python_pylint_args='--errors-only'
