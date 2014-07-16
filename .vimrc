@@ -13,6 +13,8 @@ syntax on
 set background=dark
 colorscheme solarized
 
+set hlsearch
+
 "set tabs
 set smartindent
 "set tabstop=4
