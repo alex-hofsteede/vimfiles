@@ -50,12 +50,13 @@ set backupskip=/tmp/*,/private/tmp/*
 "vmap <Up> [egv
 "vmap <Down> ]egv
 
-nnoremap <A-j> :m .+1<CR>==
-nnoremap <A-k> :m .-2<CR>==
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
-vnoremap <A-j> :m '>+1<CR>gv=gv
-vnoremap <A-k> :m '<-2<CR>gv=gv
+nnoremap <M-h> i
+nnoremap <M-j> :m .+1<CR>==
+nnoremap <M-k> :m .-2<CR>==
+inoremap <M-j> <Esc>:m .+1<CR>==gi
+inoremap <M-k> <Esc>:m .-2<CR>==gi
+vnoremap <M-j> :m '>+1<CR>gv=gv
+vnoremap <M-k> :m '<-2<CR>gv=gv
 
 nmap <Left> <Nop>
 nmap <Right> <Nop>
@@ -71,3 +72,9 @@ let g:syntastic_cpp_compiler='clang'
 let g:syntastic_cpp_compiler_options='-std=c++0x'
 let g:syntastic_python_flake8_args='--ignore=E261,E302,E501,E226'
 let g:syntastic_python_pylint_args='--errors-only'
+
+"Enter in normal mode inserts a line
+nnoremap <CR> o<Esc>
+"Stop that interfering with other modes
+:autocmd CmdwinEnter * nnoremap <CR> <CR>
+:autocmd BufReadPost quickfix nnoremap <CR> <CR>
