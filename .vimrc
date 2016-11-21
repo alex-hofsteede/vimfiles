@@ -60,15 +60,15 @@ inoremap <M-k> <Esc>:m .-2<CR>==gi
 vnoremap <M-j> :m '>+1<CR>gv=gv
 vnoremap <M-k> :m '<-2<CR>gv=gv
 
-nmap <Left> <Nop>
-nmap <Right> <Nop>
-nmap <Up> <Nop>
-nmap <Down> <Nop>
-
-vmap <Left> <Nop>
-vmap <Right> <Nop>
-vmap <Up> <Nop>
-vmap <Down> <Nop>
+"nmap <Left> <Nop>
+"nmap <Right> <Nop>
+"nmap <Up> <Nop>
+"nmap <Down> <Nop>
+"
+"vmap <Left> <Nop>
+"vmap <Right> <Nop>
+"vmap <Up> <Nop>
+"vmap <Down> <Nop>
 
 let g:syntastic_cpp_compiler='clang'
 let g:syntastic_cpp_compiler_options='-std=c++0x'
@@ -87,6 +87,13 @@ nnoremap <CR> o<Esc>
 
 "Golang
 let g:go_fmt_command = "goimports"
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_interfaces = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
 " ex command for toggling hex mode - define mapping if desired
 command -bar Hexmode call ToggleHex()
 
